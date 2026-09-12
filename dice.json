@@ -1,6 +1,11 @@
 {
-  "score": 0,
-  "total_rolls": 0,
-  "recent": [],
+  "score": 3,
+  "total_rolls": 1,
+  "recent": [
+    {
+      "player": "Dgkann",
+      "roll": 3
+    }
+  ],
   "winners": []
 }

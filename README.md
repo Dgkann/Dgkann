@@ -47,11 +47,15 @@ A multiplayer version of my [Dicegame](https://github.com/Dgkann/Dicegame), play
 <!-- DICE:START -->
 <div align="center">
 
-<img src="assets/dice-6.png" width="72" alt="dice"/>
+<img src="assets/dice-3.png" width="72" alt="rolled 3"/>
 
-**No rolls yet. Be the first!**
+**[@Dgkann](https://github.com/Dgkann) rolled a 3**
 
-`▱▱▱▱▱▱▱▱▱▱` **0 / 100**
+`▱▱▱▱▱▱▱▱▱▱` **3 / 100**
+
+recent rolls: [@Dgkann](https://github.com/Dgkann) `3`<br/>
+🏆 hall of fame: nobody yet<br/>
+<sub>total rolls: 1</sub>
 
 </div>
 <!-- DICE:END -->
