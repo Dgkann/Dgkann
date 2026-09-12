@@ -2,16 +2,27 @@
   <img src="assets/header.svg" alt="DGKANN" width="100%"/>
 </p>
 
-Hi, I'm Dogukan, a final-year software engineering student from Turkey.
+Hey, I'm Dogukan, a final-year software engineering student from Turkey.
 
-I want to get into network engineering, ideally core networks, so right now I'm working through the CCNA and learning AWS. I still enjoy building software though, and I'm happy to work on pretty much anything that teaches me something new.
+I write software, but lately I'm more interested in what happens after a request leaves the app: routers, core networks, all the stuff nobody notices until it breaks. That's where I'm heading. Here's the route so far:
 
-When I'm not coding I'm usually still at my PC, playing CS2 or Valorant, listening to music or watching a series.
+```text
+$ traceroute core-network-engineer
+traceroute to core-network-engineer, 30 hops max
+ 1  software-engineering.student     final year
+ 2  web-apps.games.tests             react, java, python, playwright
+ 3  telecom-empire.game              a telecom company, but it's a game
+ 4  vodafone.cnf-onboarding          a tool for a real one
+ 5  ccna.aws                         studying now
+ 6  * * *                            not there yet
+```
+
+Off the clock I'm on the same PC, losing clutch rounds in CS2 and Valorant with music on.
 
 ### Projects
 
 - **CNF Onboarding Platform** (private repo): a web app for Vodafone that tracks how cloud-native network functions get onboarded, from the portfolio overview down to each stage and sign-off. React, TypeScript.
-- **[TelecomEmpire](https://github.com/Dgkann/TelecomEmpire)**: a telecom tycoon game I'm working on. You bid for spectrum, build networks across cities and compete with other carriers. React, TypeScript.
+- **[TelecomEmpire](https://github.com/Dgkann/TelecomEmpire)**: a tycoon game where you run a telecom company. Bid for spectrum, build networks across cities, outlast the other carriers. React, TypeScript.
 - **[Aktour ViaBalkan](https://github.com/XFGQ/Aktourbosna-Management-System)**: management system for a tour company in Bosnia and Herzegovina. Spring Boot backend running on our own server, JavaFX desktop client.
 - **[AI-OS Scheduler](https://github.com/XFGQ/AI-Driven-Energy-Efficient-Scheduler-for-Heterogeneous-P-E-Core-Architectures)**: uses a trained model to decide whether work runs on P-cores or E-cores, to save energy. Python, TensorFlow.
 - **[OLX.ba tests](https://github.com/XFGQ/OLX-Website-Testing)**: Playwright test suite for OLX.ba.
@@ -27,7 +38,7 @@ When I'm not coding I'm usually still at my PC, playing CS2 or Valorant, listeni
 
 ### Roll the dice
 
-A shared version of my [Dicegame](https://github.com/Dgkann/Dicegame). Hit the button, press Create on the issue that opens, and a bot rolls for you and updates this page. Each roll adds to the pot, a 1 resets it, and whoever gets it to 100 goes into the hall of fame.
+Everyone who visits this page shares one pot. Hit the button, press Create on the issue that opens, and a bot rolls for you. Each roll adds to the pot, a 1 wipes it for everyone, and whoever pushes it to 100 gets their name in the hall of fame. The rules come from my [Dicegame](https://github.com/Dgkann/Dicegame).
 
 <!-- DICE:START -->
 <div align="center">
