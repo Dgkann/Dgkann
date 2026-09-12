@@ -2,47 +2,32 @@
   <img src="assets/header.svg" alt="DGKANN" width="100%"/>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Dgkann&label=visitors&color=00a884&style=flat-square" alt="visitors"/>
-</p>
+Hi, I'm Dogukan, a final-year software engineering student from Turkey.
 
-```bash
-$ whoami
-dogukan · software engineer from turkey
-builds games, AI tools and full-stack apps
+I want to get into network engineering, ideally core networks, so right now I'm working through the CCNA and learning AWS. I still enjoy building software though, and I'm happy to work on pretty much anything that teaches me something new.
 
-$ cat now.txt
-📡 building    TelecomEmpire, a telecom tycoon game
-🧠 exploring   AI-driven CPU scheduling
-🧪 testing     everything, with Playwright
-```
+When I'm not coding I'm usually still at my PC, playing CS2 or Valorant, listening to music or watching a series.
 
-### ⚡ featured builds
+### Projects
 
-| | Project | What it does | Built with |
-|:-:|---|---|---|
-| 📡 | **[TelecomEmpire](https://github.com/Dgkann/TelecomEmpire)** | Tycoon strategy game: bid for spectrum, wire up cities, outplay rival carriers | React · TypeScript · Zustand |
-| 🧠 | **[AI-OS Scheduler](https://github.com/XFGQ/AI-Driven-Energy-Efficient-Scheduler-for-Heterogeneous-P-E-Core-Architectures)** | A deep learning model picks P-cores or E-cores in real time to cut energy use | Python · TensorFlow · PyQt5 |
-| 🏔️ | **[Aktour ViaBalkan](https://github.com/XFGQ/Aktourbosna-Management-System)** | Management system for a real Balkan tour company, auto-deployed to our own rack server | Java 21 · Spring Boot · JavaFX |
-| 🐾 | **[AdoptaFriend](https://github.com/Dgkann/adoptafriend)** | Helps shelter animals find homes with adoption, volunteering and donations | Next.js · Tailwind |
-| 🧪 | **[OLX.ba Test Suite](https://github.com/XFGQ/OLX-Website-Testing)** | Functional and smoke tests for OLX.ba | Playwright · TypeScript |
+- **CNF Onboarding Platform** (private repo): a web app for Vodafone that tracks how cloud-native network functions get onboarded, from the portfolio overview down to each stage and sign-off. React, TypeScript.
+- **[TelecomEmpire](https://github.com/Dgkann/TelecomEmpire)**: a telecom tycoon game I'm working on. You bid for spectrum, build networks across cities and compete with other carriers. React, TypeScript.
+- **[Aktour ViaBalkan](https://github.com/XFGQ/Aktourbosna-Management-System)**: management system for a tour company in Bosnia and Herzegovina. Spring Boot backend running on our own server, JavaFX desktop client.
+- **[AI-OS Scheduler](https://github.com/XFGQ/AI-Driven-Energy-Efficient-Scheduler-for-Heterogeneous-P-E-Core-Architectures)**: uses a trained model to decide whether work runs on P-cores or E-cores, to save energy. Python, TensorFlow.
+- **[OLX.ba tests](https://github.com/XFGQ/OLX-Website-Testing)**: Playwright test suite for OLX.ba.
 
-### 🛠️ toolbox
+### Tech
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,vite,tailwind,java,spring,py,tensorflow,qt,cs,firebase,docker,githubactions,git&perline=8" alt="tech stack"/>
-</p>
-
-### 🐍 contribution snake
+<img src="https://skillicons.dev/icons?i=ts,js,react,angular,java,spring,py,cs,docker,aws,linux,git" alt="TypeScript, JavaScript, React, Angular, Java, Spring, Python, C#, Docker, AWS, Linux, Git"/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dgkann/Dgkann/output/snake-neon.svg"/>
   <img alt="contribution snake" src="https://raw.githubusercontent.com/Dgkann/Dgkann/output/snake-light.svg"/>
 </picture>
 
-### 🎲 roll the dice
+### Roll the dice
 
-A multiplayer version of my [Dicegame](https://github.com/Dgkann/Dicegame), played right here. Every roll adds to a shared pot, a **1** wipes it, and whoever pushes it to **100** enters the hall of fame.
+A shared version of my [Dicegame](https://github.com/Dgkann/Dicegame). Hit the button, press Create on the issue that opens, and a bot rolls for you and updates this page. Each roll adds to the pot, a 1 resets it, and whoever gets it to 100 goes into the hall of fame.
 
 <!-- DICE:START -->
 <div align="center">
@@ -61,9 +46,5 @@ recent rolls: [@Dgkann](https://github.com/Dgkann) `3`<br/>
 <!-- DICE:END -->
 
 <p align="center">
-  <a href="https://github.com/Dgkann/Dgkann/issues/new?title=%F0%9F%8E%B2%20roll&body=Just%20press%20Create.%20The%20bot%20rolls%20for%20you%20and%20the%20result%20shows%20up%20on%20the%20profile%20in%20about%2030%20seconds."><img src="https://img.shields.io/badge/%F0%9F%8E%B2%20roll%20the%20dice-00f5c4?style=for-the-badge&labelColor=0d1117" alt="roll the dice"/></a>
-</p>
-
-<p align="center">
-  <img src="assets/footer.svg" alt="end of transmission" width="100%"/>
+  <a href="https://github.com/Dgkann/Dgkann/issues/new?title=%F0%9F%8E%B2%20roll&body=Just%20press%20Create.%20The%20bot%20rolls%20for%20you%20and%20the%20result%20shows%20up%20on%20the%20profile%20in%20about%2030%20seconds."><img src="https://img.shields.io/badge/roll%20the%20dice-00f5c4?style=for-the-badge&labelColor=0d1117" alt="roll the dice"/></a>
 </p>
