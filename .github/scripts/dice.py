@@ -73,9 +73,12 @@ if count != 1:
     raise SystemExit("DICE markers not found in README.md")
 readme_path.write_text(readme, encoding="utf-8")
 
+message = f"""🎲 @{player} {result}
+
+`{bar}` **{state['score']} / {GOAL}**
+
+See it live: https://github.com/{owner}"""
+
 with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env:
     env.write(f"ROLL={roll}\n")
-    env.write(
-        f"MESSAGE=🎲 @{player} {result} Pot: {state['score']}/{GOAL}. "
-        f"See it live: https://github.com/{owner}\n"
-    )
+    env.write(f"MESSAGE<<DICE_MESSAGE_END\n{message}\nDICE_MESSAGE_END\n")

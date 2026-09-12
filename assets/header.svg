@@ -1,101 +1,167 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="DGKANN: games, AI and full-stack">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#030607"/>
-      <stop offset="1" stop-color="#062019"/>
-    </linearGradient>
-    <radialGradient id="halo" cx="50%" cy="45%" r="45%">
-      <stop offset="0" stop-color="#00f5c4" stop-opacity=".16"/>
-      <stop offset="1" stop-color="#00f5c4" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="sweepGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#00f5c4" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#00f5c4" stop-opacity=".07"/>
-      <stop offset="1" stop-color="#00f5c4" stop-opacity="0"/>
-    </linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#00f5c4" stroke-opacity=".07"/>
-    </pattern>
-    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="1" fill="#000" fill-opacity=".35"/>
-    </pattern>
-    <filter id="glow" x="-10%" y="-40%" width="120%" height="180%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <clipPath id="frame"><rect width="1200" height="320" rx="16"/></clipPath>
-    <clipPath id="sliceTop"><rect x="0" y="92" width="1200" height="34"/></clipPath>
-    <clipPath id="sliceMid"><rect x="0" y="150" width="1200" height="20"/></clipPath>
-    <clipPath id="typed">
-      <rect x="0" y="0" width="365" height="320">
-        <animate attributeName="width" values="365;835;835;365" keyTimes="0;.35;.92;1" dur="7s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="DGKANN: building telecom empires, teaching CPUs to save energy, shipping apps across the Balkans and rolling dice with strangers">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#030607"/>
+    <stop offset="1" stop-color="#062019"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="50%" cy="42%" r="45%">
+    <stop offset="0" stop-color="#00f5c4" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#00f5c4" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="sweepGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#00f5c4" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#00f5c4" stop-opacity=".07"/>
+    <stop offset="1" stop-color="#00f5c4" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="wordFill" x1="0" y1="68" x2="0" y2="188" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#c8fff3"/>
+    <stop offset=".42" stop-color="#00f5c4"/>
+    <stop offset="1" stop-color="#009e80"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#fff" stop-opacity=".75"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#00f5c4" stroke-opacity=".07"/>
+  </pattern>
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#000" fill-opacity=".3"/>
+  </pattern>
+  <filter id="neon" x="-10%" y="-45%" width="120%" height="190%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="wide"/>
+    <feFlood flood-color="#00f5c4" flood-opacity=".5"/>
+    <feComposite in2="wide" operator="in" result="wideGlow"/>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="tight"/>
+    <feFlood flood-color="#00f5c4" flood-opacity=".9"/>
+    <feComposite in2="tight" operator="in" result="tightGlow"/>
+    <feMerge><feMergeNode in="wideGlow"/><feMergeNode in="tightGlow"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="sparkGlow" x="-300%" y="-300%" width="700%" height="700%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <path id="word" d="M250.0,68.0 L322.0,68.0 L350.0,96.0 L350.0,160.0 L322.0,188.0 L250.0,188.0ZM274.0,92.0 L312.0,92.0 L326.0,106.0 L326.0,150.0 L312.0,164.0 L274.0,164.0ZM398.0,68.0 L470.0,68.0 L470.0,92.0 L408.0,92.0 L394.0,106.0 L394.0,150.0 L408.0,164.0 L446.0,164.0 L446.0,142.0 L422.0,142.0 L422.0,118.0 L470.0,118.0 L470.0,188.0 L398.0,188.0 L370.0,160.0 L370.0,96.0ZM490.0,68.0 L514.0,68.0 L514.0,114.0 L552.0,68.0 L590.0,68.0 L542.0,128.0 L590.0,188.0 L552.0,188.0 L514.0,142.0 L514.0,188.0 L490.0,188.0ZM638.0,68.0 L682.0,68.0 L710.0,96.0 L710.0,188.0 L686.0,188.0 L686.0,146.0 L634.0,146.0 L634.0,188.0 L610.0,188.0 L610.0,96.0ZM634.0,106.0 L648.0,92.0 L672.0,92.0 L686.0,106.0 L686.0,122.0 L634.0,122.0ZM730.0,68.0 L756.0,68.0 L806.0,144.0 L806.0,68.0 L830.0,68.0 L830.0,188.0 L804.0,188.0 L754.0,112.0 L754.0,188.0 L730.0,188.0ZM850.0,68.0 L876.0,68.0 L926.0,144.0 L926.0,68.0 L950.0,68.0 L950.0,188.0 L924.0,188.0 L874.0,112.0 L874.0,188.0 L850.0,188.0Z" fill-rule="evenodd" clip-rule="evenodd"/>
+  <clipPath id="upper"><rect x="0" y="0" width="1200" height="136.0"/></clipPath>
+  <clipPath id="lower"><rect x="0" y="138.5" width="1200" height="320"/></clipPath>
+  <g id="split">
+    <use href="#word" clip-path="url(#upper)"/>
+    <use href="#word" clip-path="url(#lower)" transform="translate(7 0)"/>
+  </g>
+  <mask id="cuts" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="320">
+    <rect width="1200" height="320" fill="#fff"/>
+    <polygon points="446.0,60 450.0,60 398.0,196.0 394.0,196.0" fill="#000"/><polygon points="926.0,60 930.0,60 878.0,196.0 874.0,196.0" fill="#000"/>
+  </mask>
+  <mask id="wordMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="320">
+    <use href="#split" fill="#fff"/>
+  </mask>
+  <clipPath id="frame"><rect width="1200" height="320" rx="16"/></clipPath>
+  <clipPath id="sliceTop"><rect x="0" y="90" width="1200" height="30"/></clipPath>
+  <clipPath id="sliceLow"><rect x="0" y="160" width="1200" height="18"/></clipPath>
+  <clipPath id="typed"><rect x="366.0" y="214" width="0" height="60"><animate attributeName="width" values="0.0;15.6;31.2;46.8;62.4;78.0;93.6;109.2;124.8;140.4;156.0;171.6;187.2;202.8;218.4;234.0;249.6;265.2;280.8;296.4;312.0;327.6;343.2;358.8;374.4;358.8;343.2;327.6;312.0;296.4;280.8;265.2;249.6;234.0;218.4;202.8;187.2;171.6;156.0;140.4;124.8;109.2;93.6;78.0;62.4;46.8;31.2;15.6;0.0;0.0;15.6;31.2;46.8;62.4;78.0;93.6;109.2;124.8;140.4;156.0;171.6;187.2;202.8;218.4;234.0;249.6;265.2;280.8;296.4;312.0;327.6;343.2;358.8;374.4;390.0;405.6;421.2;436.8;421.2;405.6;390.0;374.4;358.8;343.2;327.6;312.0;296.4;280.8;265.2;249.6;234.0;218.4;202.8;187.2;171.6;156.0;140.4;124.8;109.2;93.6;78.0;62.4;46.8;31.2;15.6;0.0;0.0;15.6;31.2;46.8;62.4;78.0;93.6;109.2;124.8;140.4;156.0;171.6;187.2;202.8;218.4;234.0;249.6;265.2;280.8;296.4;312.0;327.6;343.2;358.8;374.4;390.0;405.6;421.2;436.8;452.4;468.0;483.6;499.2;483.6;468.0;452.4;436.8;421.2;405.6;390.0;374.4;358.8;343.2;327.6;312.0;296.4;280.8;265.2;249.6;234.0;218.4;202.8;187.2;171.6;156.0;140.4;124.8;109.2;93.6;78.0;62.4;46.8;31.2;15.6;0.0;0.0;15.6;31.2;46.8;62.4;78.0;93.6;109.2;124.8;140.4;156.0;171.6;187.2;202.8;218.4;234.0;249.6;265.2;280.8;296.4;312.0;327.6;343.2;358.8;374.4;390.0;405.6;421.2;436.8;452.4;436.8;421.2;405.6;390.0;374.4;358.8;343.2;327.6;312.0;296.4;280.8;265.2;249.6;234.0;218.4;202.8;187.2;171.6;156.0;140.4;124.8;109.2;93.6;78.0;62.4;46.8;31.2;15.6;0.0" calcMode="discrete" keyTimes="0.00000;0.00330;0.00660;0.00990;0.01320;0.01650;0.01980;0.02310;0.02640;0.02970;0.03300;0.03630;0.03959;0.04289;0.04619;0.04949;0.05279;0.05609;0.05939;0.06269;0.06599;0.06929;0.07259;0.07589;0.07919;0.18619;0.18737;0.18855;0.18972;0.19090;0.19208;0.19326;0.19444;0.19562;0.19679;0.19797;0.19915;0.20033;0.20151;0.20269;0.20387;0.20504;0.20622;0.20740;0.20858;0.20976;0.21094;0.21211;0.21329;0.23097;0.23427;0.23757;0.24087;0.24417;0.24747;0.25077;0.25407;0.25737;0.26066;0.26396;0.26726;0.27056;0.27386;0.27716;0.28046;0.28376;0.28706;0.29036;0.29366;0.29696;0.30026;0.30356;0.30686;0.31016;0.31346;0.31676;0.32006;0.32336;0.43036;0.43153;0.43271;0.43389;0.43507;0.43625;0.43743;0.43860;0.43978;0.44096;0.44214;0.44332;0.44450;0.44568;0.44685;0.44803;0.44921;0.45039;0.45157;0.45275;0.45392;0.45510;0.45628;0.45746;0.45864;0.45982;0.46099;0.46217;0.47985;0.48315;0.48645;0.48975;0.49305;0.49635;0.49965;0.50295;0.50625;0.50955;0.51284;0.51614;0.51944;0.52274;0.52604;0.52934;0.53264;0.53594;0.53924;0.54254;0.54584;0.54914;0.55244;0.55574;0.55904;0.56234;0.56564;0.56894;0.57224;0.57554;0.57884;0.58214;0.58543;0.69243;0.69361;0.69479;0.69597;0.69715;0.69833;0.69951;0.70068;0.70186;0.70304;0.70422;0.70540;0.70658;0.70775;0.70893;0.71011;0.71129;0.71247;0.71365;0.71482;0.71600;0.71718;0.71836;0.71954;0.72072;0.72189;0.72307;0.72425;0.72543;0.72661;0.72779;0.72897;0.74664;0.74994;0.75324;0.75654;0.75984;0.76314;0.76644;0.76974;0.77304;0.77634;0.77964;0.78294;0.78624;0.78954;0.79284;0.79613;0.79943;0.80273;0.80603;0.80933;0.81263;0.81593;0.81923;0.82253;0.82583;0.82913;0.83243;0.83573;0.83903;0.84233;0.94933;0.95051;0.95169;0.95286;0.95404;0.95522;0.95640;0.95758;0.95876;0.95993;0.96111;0.96229;0.96347;0.96465;0.96583;0.96700;0.96818;0.96936;0.97054;0.97172;0.97290;0.97407;0.97525;0.97643;0.97761;0.97879;0.97997;0.98115;0.98232" dur="21.22s" repeatCount="indefinite"/></rect></clipPath>
+</defs>
+<style>
+.hud { font: 600 15px 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace; fill: #00f5c4; fill-opacity: .55; letter-spacing: 2px; }
+.sub { font: 600 26px 'Cascadia Code', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; fill: #c9fff3; }
+.prompt { fill: #00f5c4; }
+.flicker { animation: flicker 6s steps(1) infinite; }
+.glitch-a { opacity: 0; animation: glitchA 6s steps(1) infinite; }
+.glitch-b { opacity: 0; animation: glitchB 6s steps(1) infinite; }
+.chroma-p { animation: chromaP 6s steps(1) infinite; }
+.chroma-c { animation: chromaC 6s steps(1) infinite; }
+.blink { animation: blink 1s steps(1) infinite; }
+.start { animation: blink 1.6s steps(1) infinite; }
+.pulse { animation: pulse 2s ease-in-out infinite; }
+@keyframes flicker { 0% { opacity: 1 } 87% { opacity: .5 } 88% { opacity: 1 } 92% { opacity: .65 } 93% { opacity: 1 } }
+@keyframes glitchA {
+  0% { opacity: 0; transform: translateX(0) }
+  86% { opacity: .9; transform: translateX(-22px) }
+  88% { opacity: .9; transform: translateX(14px) }
+  90% { opacity: 0; transform: translateX(0) }
+  94% { opacity: .9; transform: translateX(-8px) }
+  95% { opacity: 0; transform: translateX(0) }
+}
+@keyframes glitchB {
+  0% { opacity: 0; transform: translateX(0) }
+  87% { opacity: .95; transform: translateX(26px) }
+  89% { opacity: .95; transform: translateX(-12px) }
+  91% { opacity: 0; transform: translateX(0) }
+}
+@keyframes chromaP { 0% { transform: translateX(-3px) } 86% { transform: translateX(-12px) } 89% { transform: translateX(6px) } 91% { transform: translateX(-3px) } }
+@keyframes chromaC { 0% { transform: translateX(3px) } 86% { transform: translateX(11px) } 89% { transform: translateX(-7px) } 91% { transform: translateX(3px) } }
+@keyframes blink { 0% { opacity: 1 } 50% { opacity: 0 } }
+@keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: .25 } }
+</style>
 
-  <style>
-    .title { font: 900 150px 'Arial Black', 'Segoe UI Black', 'Helvetica Neue', Impact, sans-serif; }
-    .sub { font: 600 30px 'Cascadia Code', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; fill: #b8fff0; }
-    .hud { font: 600 15px 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace; fill: #00f5c4; fill-opacity: .55; letter-spacing: 2px; }
-    .flicker { animation: flicker 5s steps(1) infinite; }
-    .glitch-a { opacity: 0; animation: glitchA 5s steps(1) infinite; }
-    .glitch-b { opacity: 0; animation: glitchB 5s steps(1) infinite; }
-    .blink { animation: blink 1s steps(1) infinite; }
-    .pulse { animation: pulse 2s ease-in-out infinite; }
-    @keyframes flicker { 0% { opacity: 1 } 87% { opacity: .55 } 88% { opacity: 1 } 92% { opacity: .6 } 93% { opacity: 1 } }
-    @keyframes glitchA {
-      0% { opacity: 0; transform: translateX(0) }
-      86% { opacity: .9; transform: translateX(-18px) }
-      88% { opacity: .9; transform: translateX(12px) }
-      90% { opacity: 0; transform: translateX(0) }
-      94% { opacity: .9; transform: translateX(-6px) }
-      95% { opacity: 0; transform: translateX(0) }
-    }
-    @keyframes glitchB {
-      0% { opacity: 0; transform: translateX(0) }
-      87% { opacity: .95; transform: translateX(22px) }
-      89% { opacity: .95; transform: translateX(-10px) }
-      91% { opacity: 0; transform: translateX(0) }
-    }
-    @keyframes blink { 0% { opacity: 1 } 50% { opacity: 0 } }
-    @keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: .25 } }
-  </style>
+<g clip-path="url(#frame)">
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect width="1200" height="320" fill="url(#halo)"/>
 
-  <g clip-path="url(#frame)">
-    <rect width="1200" height="320" fill="url(#bg)"/>
-    <rect width="1200" height="320" fill="url(#grid)"/>
-    <rect width="1200" height="320" fill="url(#halo)"/>
+  <text x="40" y="44" class="hud">[ SYS://DGKANN ]</text>
+  <circle cx="1068" cy="39" r="5" fill="#00f5c4" class="pulse"/>
+  <text x="1160" y="44" text-anchor="end" class="hud">ONLINE</text>
+  <text x="40" y="296" class="hud">TR · EST. 2022</text>
+  <text x="1160" y="296" text-anchor="end" class="hud start">PRESS START ▶</text>
 
-    <text x="40" y="48" class="hud">[ SYS://DGKANN ]</text>
-    <circle cx="1068" cy="43" r="5" fill="#00f5c4" class="pulse"/>
-    <text x="1160" y="48" text-anchor="end" class="hud">ONLINE</text>
-    <text x="40" y="292" class="hud">TR · EST. 2022</text>
-    <text x="1160" y="292" text-anchor="end" class="hud">SCROLL ↓ TO ROLL THE DICE</text>
+  <path d="M222.0,76V54H244.0 M956.0,54H978.0V76 M978.0,180.0V202.0H956.0 M244.0,202.0H222.0V180.0" fill="none" stroke="#00f5c4" stroke-opacity=".45" stroke-width="2"/>
 
-    <g filter="url(#glow)">
-      <text x="600" y="190" text-anchor="middle" textLength="780" lengthAdjust="spacingAndGlyphs" class="title flicker" fill="#00f5c4">DGKANN</text>
-    </g>
-    <g clip-path="url(#sliceTop)">
-      <text x="600" y="190" text-anchor="middle" textLength="780" lengthAdjust="spacingAndGlyphs" class="title glitch-a" fill="#ff2e88">DGKANN</text>
-    </g>
-    <g clip-path="url(#sliceMid)">
-      <text x="600" y="190" text-anchor="middle" textLength="780" lengthAdjust="spacingAndGlyphs" class="title glitch-b" fill="#d9fff6">DGKANN</text>
-    </g>
-
-    <g clip-path="url(#typed)">
-      <text x="365" y="248" textLength="470" lengthAdjust="spacingAndGlyphs" class="sub">&gt; games · AI · full-stack</text>
-    </g>
-    <rect y="224" width="13" height="30" fill="#00f5c4" class="blink">
-      <animate attributeName="x" values="372;842;842;372" keyTimes="0;.35;.92;1" dur="7s" repeatCount="indefinite"/>
-    </rect>
-
-    <rect width="1200" height="320" fill="url(#scanlines)"/>
-    <rect x="0" y="-60" width="1200" height="60" fill="url(#sweepGrad)">
-      <animate attributeName="y" from="-60" to="320" dur="5s" repeatCount="indefinite"/>
+  <use href="#split" fill="#ff2e88" opacity=".55" class="chroma-p"/>
+  <use href="#split" fill="#2de2ff" opacity=".45" class="chroma-c"/>
+  <g filter="url(#neon)" class="flicker">
+    <use href="#split" fill="url(#wordFill)" mask="url(#cuts)"/>
+  </g>
+  <g mask="url(#wordMask)">
+    <rect x="0" y="58" width="70" height="160" fill="url(#shine)" transform="skewX(-18)">
+      <animate attributeName="x" values="-200;-200;1500" keyTimes="0;.55;1" dur="6s" repeatCount="indefinite"/>
     </rect>
   </g>
-  <rect x=".5" y=".5" width="1199" height="319" rx="16" fill="none" stroke="#00f5c4" stroke-opacity=".35"/>
+  <g clip-path="url(#sliceTop)"><use href="#split" fill="#ff2e88" class="glitch-a"/></g>
+  <g clip-path="url(#sliceLow)"><use href="#split" fill="#e6fffa" class="glitch-b"/></g>
+
+  <g filter="url(#sparkGlow)">
+<rect x="470" y="96" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="2.1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-12 -41" dur="2.4s" begin="2.1s" repeatCount="indefinite"/></rect>
+<rect x="606" y="82" width="3" height="3" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.3s" begin="1.0s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-12 -50" dur="3.3s" begin="1.0s" repeatCount="indefinite"/></rect>
+<rect x="648" y="192" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.7s" begin="2.3s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;13 -43" dur="4.7s" begin="2.3s" repeatCount="indefinite"/></rect>
+<rect x="264" y="181" width="3" height="3" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.3s" begin="2.2s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;2 -51" dur="3.3s" begin="2.2s" repeatCount="indefinite"/></rect>
+<rect x="735" y="90" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.9s" begin="1.5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-12 -50" dur="3.9s" begin="1.5s" repeatCount="indefinite"/></rect>
+<rect x="274" y="103" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.3s" begin="1.3s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-1 -51" dur="3.3s" begin="1.3s" repeatCount="indefinite"/></rect>
+<rect x="452" y="173" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-4 -47" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></rect>
+<rect x="562" y="151" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="1.7s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-10 -59" dur="2.5s" begin="1.7s" repeatCount="indefinite"/></rect>
+<rect x="592" y="83" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.2s" begin="2.3s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-5 -64" dur="4.2s" begin="2.3s" repeatCount="indefinite"/></rect>
+<rect x="745" y="149" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.3s" begin="0.3s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-6 -29" dur="4.3s" begin="0.3s" repeatCount="indefinite"/></rect>
+<rect x="746" y="86" width="3" height="3" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.9s" begin="4.0s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-6 -62" dur="3.9s" begin="4.0s" repeatCount="indefinite"/></rect>
+<rect x="515" y="158" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.6s" begin="1.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-0 -52" dur="4.6s" begin="1.4s" repeatCount="indefinite"/></rect>
+<rect x="391" y="112" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.2s" begin="3.7s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-9 -47" dur="3.2s" begin="3.7s" repeatCount="indefinite"/></rect>
+<rect x="527" y="111" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.3s" begin="3.5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-2 -38" dur="4.3s" begin="3.5s" repeatCount="indefinite"/></rect>
+<rect x="495" y="184" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin="0.7s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-7 -35" dur="2.6s" begin="0.7s" repeatCount="indefinite"/></rect>
+<rect x="589" y="149" width="3" height="3" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.9s" begin="0.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;3 -49" dur="2.9s" begin="0.6s" repeatCount="indefinite"/></rect>
+<rect x="466" y="93" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.7s" begin="2.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-1 -58" dur="4.7s" begin="2.6s" repeatCount="indefinite"/></rect>
+<rect x="875" y="192" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.2s" begin="1.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;4 -30" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></rect>
+<rect x="276" y="86" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.3s" begin="0.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-11 -52" dur="3.3s" begin="0.4s" repeatCount="indefinite"/></rect>
+<rect x="649" y="142" width="3" height="3" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.8s" begin="0.3s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-3 -34" dur="3.8s" begin="0.3s" repeatCount="indefinite"/></rect>
+<rect x="699" y="193" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.1s" begin="0.5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;14 -63" dur="3.1s" begin="0.5s" repeatCount="indefinite"/></rect>
+<rect x="575" y="136" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin="3.0s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-1 -58" dur="2.6s" begin="3.0s" repeatCount="indefinite"/></rect>
+<rect x="742" y="140" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.7s" begin="2.1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;1 -32" dur="4.7s" begin="2.1s" repeatCount="indefinite"/></rect>
+<rect x="250" y="141" width="2" height="2" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.0s" begin="1.0s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-9 -42" dur="4.0s" begin="1.0s" repeatCount="indefinite"/></rect>
+<rect x="801" y="142" width="4" height="4" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.1s" begin="0.9s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;14 -62" dur="3.1s" begin="0.9s" repeatCount="indefinite"/></rect>
+<rect x="861" y="175" width="3" height="3" fill="#00f5c4" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="4.1s" begin="0.9s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-4 -48" dur="4.1s" begin="0.9s" repeatCount="indefinite"/></rect>
+  </g>
+
+<text x="334.8" y="254" class="sub prompt" textLength="15.6" lengthAdjust="spacingAndGlyphs">&gt;</text>
+<g clip-path="url(#typed)">
+<text x="366.0" y="254" class="sub" textLength="374.4" lengthAdjust="spacingAndGlyphs" opacity="1">building telecom empires<animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.23097" dur="21.22s" repeatCount="indefinite"/></text>
+<text x="366.0" y="254" class="sub" textLength="436.8" lengthAdjust="spacingAndGlyphs" opacity="0">teaching CPUs to save energy<animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.23097;0.47985" dur="21.22s" repeatCount="indefinite"/></text>
+<text x="366.0" y="254" class="sub" textLength="499.2" lengthAdjust="spacingAndGlyphs" opacity="0">shipping apps across the Balkans<animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.47985;0.74664" dur="21.22s" repeatCount="indefinite"/></text>
+<text x="366.0" y="254" class="sub" textLength="452.4" lengthAdjust="spacingAndGlyphs" opacity="0">rolling dice with strangers ↓<animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.74664" dur="21.22s" repeatCount="indefinite"/></text>
+</g>
+<rect x="368.0" y="232" width="12" height="28" fill="#00f5c4" class="blink"><animate attributeName="x" values="368.0;383.6;399.2;414.8;430.4;446.0;461.6;477.2;492.8;508.4;524.0;539.6;555.2;570.8;586.4;602.0;617.6;633.2;648.8;664.4;680.0;695.6;711.2;726.8;742.4;726.8;711.2;695.6;680.0;664.4;648.8;633.2;617.6;602.0;586.4;570.8;555.2;539.6;524.0;508.4;492.8;477.2;461.6;446.0;430.4;414.8;399.2;383.6;368.0;368.0;383.6;399.2;414.8;430.4;446.0;461.6;477.2;492.8;508.4;524.0;539.6;555.2;570.8;586.4;602.0;617.6;633.2;648.8;664.4;680.0;695.6;711.2;726.8;742.4;758.0;773.6;789.2;804.8;789.2;773.6;758.0;742.4;726.8;711.2;695.6;680.0;664.4;648.8;633.2;617.6;602.0;586.4;570.8;555.2;539.6;524.0;508.4;492.8;477.2;461.6;446.0;430.4;414.8;399.2;383.6;368.0;368.0;383.6;399.2;414.8;430.4;446.0;461.6;477.2;492.8;508.4;524.0;539.6;555.2;570.8;586.4;602.0;617.6;633.2;648.8;664.4;680.0;695.6;711.2;726.8;742.4;758.0;773.6;789.2;804.8;820.4;836.0;851.6;867.2;851.6;836.0;820.4;804.8;789.2;773.6;758.0;742.4;726.8;711.2;695.6;680.0;664.4;648.8;633.2;617.6;602.0;586.4;570.8;555.2;539.6;524.0;508.4;492.8;477.2;461.6;446.0;430.4;414.8;399.2;383.6;368.0;368.0;383.6;399.2;414.8;430.4;446.0;461.6;477.2;492.8;508.4;524.0;539.6;555.2;570.8;586.4;602.0;617.6;633.2;648.8;664.4;680.0;695.6;711.2;726.8;742.4;758.0;773.6;789.2;804.8;820.4;804.8;789.2;773.6;758.0;742.4;726.8;711.2;695.6;680.0;664.4;648.8;633.2;617.6;602.0;586.4;570.8;555.2;539.6;524.0;508.4;492.8;477.2;461.6;446.0;430.4;414.8;399.2;383.6;368.0" calcMode="discrete" keyTimes="0.00000;0.00330;0.00660;0.00990;0.01320;0.01650;0.01980;0.02310;0.02640;0.02970;0.03300;0.03630;0.03959;0.04289;0.04619;0.04949;0.05279;0.05609;0.05939;0.06269;0.06599;0.06929;0.07259;0.07589;0.07919;0.18619;0.18737;0.18855;0.18972;0.19090;0.19208;0.19326;0.19444;0.19562;0.19679;0.19797;0.19915;0.20033;0.20151;0.20269;0.20387;0.20504;0.20622;0.20740;0.20858;0.20976;0.21094;0.21211;0.21329;0.23097;0.23427;0.23757;0.24087;0.24417;0.24747;0.25077;0.25407;0.25737;0.26066;0.26396;0.26726;0.27056;0.27386;0.27716;0.28046;0.28376;0.28706;0.29036;0.29366;0.29696;0.30026;0.30356;0.30686;0.31016;0.31346;0.31676;0.32006;0.32336;0.43036;0.43153;0.43271;0.43389;0.43507;0.43625;0.43743;0.43860;0.43978;0.44096;0.44214;0.44332;0.44450;0.44568;0.44685;0.44803;0.44921;0.45039;0.45157;0.45275;0.45392;0.45510;0.45628;0.45746;0.45864;0.45982;0.46099;0.46217;0.47985;0.48315;0.48645;0.48975;0.49305;0.49635;0.49965;0.50295;0.50625;0.50955;0.51284;0.51614;0.51944;0.52274;0.52604;0.52934;0.53264;0.53594;0.53924;0.54254;0.54584;0.54914;0.55244;0.55574;0.55904;0.56234;0.56564;0.56894;0.57224;0.57554;0.57884;0.58214;0.58543;0.69243;0.69361;0.69479;0.69597;0.69715;0.69833;0.69951;0.70068;0.70186;0.70304;0.70422;0.70540;0.70658;0.70775;0.70893;0.71011;0.71129;0.71247;0.71365;0.71482;0.71600;0.71718;0.71836;0.71954;0.72072;0.72189;0.72307;0.72425;0.72543;0.72661;0.72779;0.72897;0.74664;0.74994;0.75324;0.75654;0.75984;0.76314;0.76644;0.76974;0.77304;0.77634;0.77964;0.78294;0.78624;0.78954;0.79284;0.79613;0.79943;0.80273;0.80603;0.80933;0.81263;0.81593;0.81923;0.82253;0.82583;0.82913;0.83243;0.83573;0.83903;0.84233;0.94933;0.95051;0.95169;0.95286;0.95404;0.95522;0.95640;0.95758;0.95876;0.95993;0.96111;0.96229;0.96347;0.96465;0.96583;0.96700;0.96818;0.96936;0.97054;0.97172;0.97290;0.97407;0.97525;0.97643;0.97761;0.97879;0.97997;0.98115;0.98232" dur="21.22s" repeatCount="indefinite"/></rect>
+
+  <rect width="1200" height="320" fill="url(#scanlines)"/>
+  <rect x="0" y="-60" width="1200" height="60" fill="url(#sweepGrad)">
+    <animate attributeName="y" from="-60" to="320" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</g>
+<rect x=".5" y=".5" width="1199" height="319" rx="16" fill="none" stroke="#00f5c4" stroke-opacity=".35"/>
 </svg>

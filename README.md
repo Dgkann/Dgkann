@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" alt="DGKANN: games · AI · full-stack" width="100%"/>
+  <img src="assets/header.svg" alt="DGKANN" width="100%"/>
 </p>
 
 <p align="center">
