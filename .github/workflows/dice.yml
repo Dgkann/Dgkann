@@ -1,0 +1,39 @@
+name: dice
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: dice
+
+jobs:
+  roll:
+    if: startsWith(github.event.issue.title, '🎲')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PLAYER: ${{ github.event.issue.user.login }}
+      ISSUE: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Roll
+        run: python3 .github/scripts/dice.py
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md dice.json
+          git commit -m "🎲 @$PLAYER rolled a $ROLL"
+          git push
+
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --reason completed --comment "$MESSAGE"

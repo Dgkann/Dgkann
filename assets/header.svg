@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="DGKANN: games, AI and full-stack">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030607"/>
+      <stop offset="1" stop-color="#062019"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="45%" r="45%">
+      <stop offset="0" stop-color="#00f5c4" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#00f5c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00f5c4" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00f5c4" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#00f5c4" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#00f5c4" stroke-opacity=".07"/>
+    </pattern>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" fill-opacity=".35"/>
+    </pattern>
+    <filter id="glow" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="320" rx="16"/></clipPath>
+    <clipPath id="sliceTop"><rect x="0" y="92" width="1200" height="34"/></clipPath>
+    <clipPath id="sliceMid"><rect x="0" y="150" width="1200" height="20"/></clipPath>
+    <clipPath id="typed">
+      <rect x="0" y="0" width="365" height="320">
+        <animate attributeName="width" values="365;835;835;365" keyTimes="0;.35;.92;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .title { font: 900 150px 'Arial Black', 'Segoe UI Black', 'Helvetica Neue', Impact, sans-serif; }
+    .sub { font: 600 30px 'Cascadia Code', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; fill: #b8fff0; }
+    .hud { font: 600 15px 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace; fill: #00f5c4; fill-opacity: .55; letter-spacing: 2px; }
+    .flicker { animation: flicker 5s steps(1) infinite; }
+    .glitch-a { opacity: 0; animation: glitchA 5s steps(1) infinite; }
+    .glitch-b { opacity: 0; animation: glitchB 5s steps(1) infinite; }
+    .blink { animation: blink 1s steps(1) infinite; }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+    @keyframes flicker { 0% { opacity: 1 } 87% { opacity: .55 } 88% { opacity: 1 } 92% { opacity: .6 } 93% { opacity: 1 } }
+    @keyframes glitchA {
+      0% { opacity: 0; transform: translateX(0) }
+      86% { opacity: .9; transform: translateX(-18px) }
+      88% { opacity: .9; transform: translateX(12px) }
+      90% { opacity: 0; transform: translateX(0) }
+      94% { opacity: .9; transform: translateX(-6px) }
+      95% { opacity: 0; transform: translateX(0) }
+    }
+    @keyframes glitchB {
+      0% { opacity: 0; transform: translateX(0) }
+      87% { opacity: .95; transform: translateX(22px) }
+      89% { opacity: .95; transform: translateX(-10px) }
+      91% { opacity: 0; transform: translateX(0) }
+    }
+    @keyframes blink { 0% { opacity: 1 } 50% { opacity: 0 } }
+    @keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: .25 } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect width="1200" height="320" fill="url(#halo)"/>
+
+    <text x="40" y="48" class="hud">[ SYS://DGKANN ]</text>
+    <circle cx="1068" cy="43" r="5" fill="#00f5c4" class="pulse"/>
+    <text x="1160" y="48" text-anchor="end" class="hud">ONLINE</text>
+    <text x="40" y="292" class="hud">TR · EST. 2022</text>
+    <text x="1160" y="292" text-anchor="end" class="hud">SCROLL ↓ TO ROLL THE DICE</text>
+
+    <g filter="url(#glow)">
+      <text x="600" y="190" text-anchor="middle" textLength="780" lengthAdjust="spacingAndGlyphs" class="title flicker" fill="#00f5c4">DGKANN</text>
+    </g>
+    <g clip-path="url(#sliceTop)">
+      <text x="600" y="190" text-anchor="middle" textLength="780" lengthAdjust="spacingAndGlyphs" class="title glitch-a" fill="#ff2e88">DGKANN</text>
+    </g>
+    <g clip-path="url(#sliceMid)">
+      <text x="600" y="190" text-anchor="middle" textLength="780" lengthAdjust="spacingAndGlyphs" class="title glitch-b" fill="#d9fff6">DGKANN</text>
+    </g>
+
+    <g clip-path="url(#typed)">
+      <text x="365" y="248" textLength="470" lengthAdjust="spacingAndGlyphs" class="sub">&gt; games · AI · full-stack</text>
+    </g>
+    <rect y="224" width="13" height="30" fill="#00f5c4" class="blink">
+      <animate attributeName="x" values="372;842;842;372" keyTimes="0;.35;.92;1" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect width="1200" height="320" fill="url(#scanlines)"/>
+    <rect x="0" y="-60" width="1200" height="60" fill="url(#sweepGrad)">
+      <animate attributeName="y" from="-60" to="320" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="319" rx="16" fill="none" stroke="#00f5c4" stroke-opacity=".35"/>
+</svg>
