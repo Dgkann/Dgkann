@@ -4,15 +4,15 @@
 
 Hi, I'm Doğukan
 
-I'm a Software Engineering student interested in **frontend, backend, cloud and network technologies**.
+I'm a Software Engineering student who likes learning by building things.
 
-I like building useful projects and learning how things work behind the scenes. I work with technologies like **React, TypeScript, Node.js, PostgreSQL and Docker**.
+I'm interested in **frontend, backend, cloud and network technologies**. I enjoy understanding how a system works, not only writing the code.
 
-I'm also interested in **telecom networks, monitoring systems and cloud infrastructure**.
+I work with technologies like **React, TypeScript, Node.js, PostgreSQL and Docker**, and I'm also learning more about **telecom networks, monitoring and cloud systems**.
 
-Outside of coding, I enjoy **gaming, cars, travelling, music and football**.
+Outside of coding, I enjoy **gaming, cars, travelling, music and football**. I also like trying new technologies and working on small ideas that come to my mind.
 
-I like learning new things, trying new technologies and sometimes building projects just because I think they would be fun or useful.
+I don't want to stay in only one area. I like learning different parts of technology and improving myself step by step.
 
 ```text
 $ traceroute core-network-engineer
@@ -35,7 +35,16 @@ traceroute to core-network-engineer (10.0.0.1), 30 hops max, 60 byte packets
 
 ### Tech
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,angular,nodejs,postgres,docker,aws,linux,java,spring,py,git" alt="TypeScript, JavaScript, React, Angular, Node.js, PostgreSQL, Docker, AWS, Linux, Java, Spring, Python, Git"/>
+**Frontend**<br/>
+<img src="https://skillicons.dev/icons?i=ts,js,html,css,react,nextjs,angular,vite,tailwind,sass&perline=12" alt="TypeScript, JavaScript, HTML, CSS, React, Next.js, Angular, Vite, Tailwind, Sass"/>
+
+**Backend and data**<br/>
+<img src="https://skillicons.dev/icons?i=nodejs,java,spring,py,cs,cpp,postgres,mysql,firebase,tensorflow,sklearn,qt&perline=12" alt="Node.js, Java, Spring, Python, C#, C++, PostgreSQL, MySQL, Firebase, TensorFlow, scikit-learn, Qt"/>
+
+**Cloud and tools**<br/>
+<img src="https://skillicons.dev/icons?i=docker,nginx,aws,linux,githubactions,maven,git&perline=12" alt="Docker, Nginx, AWS, Linux, GitHub Actions, Maven, Git"/>
+
+Also: Playwright, Zustand, TanStack Query, ECharts, Spring Security, JavaFX, PyQt5, MAVLink
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dgkann/Dgkann/output/snake-neon.svg"/>
