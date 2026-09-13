@@ -59,15 +59,15 @@ Everyone who visits this page shares one pot. Hit the button, press Create on th
 <!-- DICE:START -->
 <div align="center">
 
-<img src="assets/dice-3.png" width="72" alt="rolled 3"/>
+<img src="assets/dice-6.png" width="72" alt="rolled 6"/>
 
-**[@Dgkann](https://github.com/Dgkann) rolled a 3**
+**[@altanberkeren](https://github.com/altanberkeren) rolled a 6**
 
-`▱▱▱▱▱▱▱▱▱▱` **3 / 100**
+`▱▱▱▱▱▱▱▱▱▱` **9 / 100**
 
-recent rolls: [@Dgkann](https://github.com/Dgkann) `3`<br/>
+recent rolls: [@altanberkeren](https://github.com/altanberkeren) `6` · [@Dgkann](https://github.com/Dgkann) `3`<br/>
 🏆 hall of fame: nobody yet<br/>
-<sub>total rolls: 1</sub>
+<sub>total rolls: 2</sub>
 
 </div>
 <!-- DICE:END -->
