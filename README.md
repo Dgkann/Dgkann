@@ -2,34 +2,40 @@
   <img src="assets/header.svg" alt="DGKANN" width="100%"/>
 </p>
 
-Hey, I'm Dogukan, a final-year software engineering student from Turkey.
+Hi, I'm Doğukan
 
-I write software, but lately I'm more interested in what happens after a request leaves the app: routers, core networks, all the stuff nobody notices until it breaks. That's where I'm heading. Here's the route so far:
+I'm a Software Engineering student interested in **frontend, backend, cloud and network technologies**.
+
+I like building useful projects and learning how things work behind the scenes. I work with technologies like **React, TypeScript, Node.js, PostgreSQL and Docker**.
+
+I'm also interested in **telecom networks, monitoring systems and cloud infrastructure**.
+
+Outside of coding, I enjoy **gaming, cars, travelling, music and football**.
+
+I like learning new things, trying new technologies and sometimes building projects just because I think they would be fun or useful.
 
 ```text
 $ traceroute core-network-engineer
-traceroute to core-network-engineer, 30 hops max
- 1  software-engineering.student     final year
- 2  web-apps.games.tests             react, java, python, playwright
- 3  telecom-empire.game              a telecom company, but it's a game
- 4  vodafone.cnf-onboarding          a tool for a real one
- 5  ccna.aws                         studying now
- 6  * * *                            not there yet
+traceroute to core-network-engineer (10.0.0.1), 30 hops max, 60 byte packets
+ 1  final-year.swe-student (192.168.1.1)  0.412 ms  0.388 ms  0.401 ms
+ 2  react.node.postgres.docker (172.16.0.1)  3.870 ms  3.912 ms  3.855 ms
+ 3  telecomempire.game (172.16.3.7)  8.214 ms  8.190 ms  8.301 ms
+ 4  cnf-onboarding.vodafone (10.20.4.1)  12.906 ms  13.011 ms  12.877 ms
+ 5  ccna.aws.in-progress (10.20.5.1)  21.337 ms *  22.104 ms
+ 6  * * *
 ```
-
-Off the clock I'm on the same PC, losing clutch rounds in CS2 and Valorant with music on.
 
 ### Projects
 
-- **CNF Onboarding Platform** (private repo): a web app for Vodafone that tracks how cloud-native network functions get onboarded, from the portfolio overview down to each stage and sign-off. React, TypeScript.
-- **[TelecomEmpire](https://github.com/Dgkann/TelecomEmpire)**: a tycoon game where you run a telecom company. Bid for spectrum, build networks across cities, outlast the other carriers. React, TypeScript.
-- **[Aktour ViaBalkan](https://github.com/XFGQ/Aktourbosna-Management-System)**: management system for a tour company in Bosnia and Herzegovina. Spring Boot backend running on our own server, JavaFX desktop client.
-- **[AI-OS Scheduler](https://github.com/XFGQ/AI-Driven-Energy-Efficient-Scheduler-for-Heterogeneous-P-E-Core-Architectures)**: uses a trained model to decide whether work runs on P-cores or E-cores, to save energy. Python, TensorFlow.
-- **[OLX.ba tests](https://github.com/XFGQ/OLX-Website-Testing)**: Playwright test suite for OLX.ba.
+- **CNF Onboarding Platform** (private): web app for tracking CNF onboarding, built for Vodafone. React, TypeScript.
+- **[TelecomEmpire](https://github.com/Dgkann/TelecomEmpire)**: telecom tycoon game. React, TypeScript.
+- **[Aktour ViaBalkan](https://github.com/XFGQ/Aktourbosna-Management-System)**: tour management system for a travel company in Bosnia. Spring Boot, JavaFX.
+- **[AI-OS Scheduler](https://github.com/XFGQ/AI-Driven-Energy-Efficient-Scheduler-for-Heterogeneous-P-E-Core-Architectures)**: AI model that picks P-cores or E-cores to save energy. Python, TensorFlow.
+- **[OLX.ba tests](https://github.com/XFGQ/OLX-Website-Testing)**: Playwright tests for OLX.ba.
 
 ### Tech
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,angular,java,spring,py,cs,docker,aws,linux,git" alt="TypeScript, JavaScript, React, Angular, Java, Spring, Python, C#, Docker, AWS, Linux, Git"/>
+<img src="https://skillicons.dev/icons?i=ts,js,react,angular,nodejs,postgres,docker,aws,linux,java,spring,py,git" alt="TypeScript, JavaScript, React, Angular, Node.js, PostgreSQL, Docker, AWS, Linux, Java, Spring, Python, Git"/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dgkann/Dgkann/output/snake-neon.svg"/>
