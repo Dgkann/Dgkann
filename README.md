@@ -29,6 +29,7 @@ traceroute to core-network-engineer (10.0.0.1), 30 hops max, 60 byte packets
 
 - **CNF Onboarding Platform** (private): web app for tracking CNF onboarding, built for Vodafone. React, TypeScript.
 - **[TelecomEmpire](https://github.com/Dgkann/TelecomEmpire)**: telecom tycoon game. React, TypeScript.
+- **[GroundControl](https://github.com/ORAO-AVIATION-IUS/GroundControl)**: drone ground control station for ORAO Aviation, with MAVLink telemetry. C++, Qt/QML.
 - **[Aktour ViaBalkan](https://github.com/XFGQ/Aktourbosna-Management-System)**: tour management system for a travel company in Bosnia. Spring Boot, JavaFX.
 - **[AI-OS Scheduler](https://github.com/XFGQ/AI-Driven-Energy-Efficient-Scheduler-for-Heterogeneous-P-E-Core-Architectures)**: AI model that picks P-cores or E-cores to save energy. Python, TensorFlow.
 - **[OLX.ba tests](https://github.com/XFGQ/OLX-Website-Testing)**: Playwright tests for OLX.ba.
