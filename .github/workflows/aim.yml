@@ -1,4 +1,4 @@
-name: snake
+name: aim trainer
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [.github/workflows/snake.yml]
+    paths: [.github/workflows/aim.yml, .github/scripts/aim_trainer.py]
 
 permissions:
   contents: write
@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-light.svg
-            dist/snake-neon.svg?palette=github-dark&color_snake=#00f5c4&color_dots=#161b22,#0b4f42,#0e8a70,#12bf9b,#00f5c4
+      - uses: actions/checkout@v4
+
+      - name: Generate
+        run: python3 .github/scripts/aim_trainer.py ${{ github.repository_owner }} dist/aim-trainer.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:

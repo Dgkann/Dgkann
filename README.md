@@ -47,10 +47,7 @@ traceroute to core-network-engineer (10.0.0.1), 30 hops max, 60 byte packets
 
 Also: Playwright, Zustand, TanStack Query, ECharts, Spring Security, JavaFX, PyQt5, MAVLink
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dgkann/Dgkann/output/snake-neon.svg"/>
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/Dgkann/Dgkann/output/snake-light.svg"/>
-</picture>
+<img alt="Aim trainer clearing my contribution graph" src="https://raw.githubusercontent.com/Dgkann/Dgkann/output/aim-trainer.svg"/>
 
 ### Roll the dice
 
