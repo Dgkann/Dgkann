@@ -14,6 +14,8 @@ Outside of coding, I enjoy **gaming, cars, travelling, music and football**. I a
 
 I don't want to stay in only one area. I like learning different parts of technology and improving myself step by step.
 
+[LinkedIn](https://www.linkedin.com/in/dogukanyurtturk/) · [dogukanyurtturkk@gmail.com](mailto:dogukanyurtturkk@gmail.com)
+
 ```text
 $ traceroute core-network-engineer
 traceroute to core-network-engineer (10.0.0.1), 30 hops max, 60 byte packets
